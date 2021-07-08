@@ -389,6 +389,7 @@ class Post extends Model
      */
     public function __get($key)
     {
+    	dd( $key );
         $value = parent::__get($key);
 
         if ($value === null && !property_exists($this, $key)) {
